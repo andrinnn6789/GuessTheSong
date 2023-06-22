@@ -3,17 +3,21 @@
 
 <PageTitle>Guess The Song</PageTitle>
 
-<Button @onclick="GetLyrics">Get Lyrics</Button>
+<Button @onclick="GetLyrics">Get Lyrics from a Random Track in Playlist</Button>
 
+<input type="text" placeholder="playlistId" value="@_playlist" @oninput="SaveInVariable" />
 
-<input type="text" value="@inputValue" @oninput="ProcessInput" />
+<br/>
+<br/>
+
+<input type="text" placeholder="lyric input" value="@_inputValue" @oninput="ProcessInput" />
 
 <div class="counter">
-    <span>@amountOfMatched</span>/<span>@lyrics.Length</span>
+    <span>@_amountOfMatched</span>/<span>@_lyrics.Length</span>
 </div>
 
 <div class="lyrics-grid">
-    @foreach (string word in lyrics)
+    @foreach (string word in _lyrics)
     {
         <div class="lyrics-box">
             <div id="@word" class="@GetDivClass(word)">@word</div>
@@ -29,7 +33,7 @@
 <style>
     .lyrics-grid {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(10, 1fr);
         grid-gap: 10px;
     }
 
@@ -63,43 +67,42 @@
 </style>
 
 @code {
-    private string inputValue = "";
-    private int amountOfMatched = 0;
-    private string[] lyrics = new string[]
-    {
-        "I", "am", "cool", "De", "Jänne", "esch", "en", "fette", "hs", "genau", "so", "fett","a", "i"
-    };
-    private HashSet<string> matchedLyrics = new HashSet<string>();
-    private bool inputMatched = false;
+    private string _inputValue = string.Empty;
+    private string _playlist = string.Empty;
+    private int _amountOfMatched = 0;
+    private string[] _lyrics = Array.Empty<string>();
+    private HashSet<string> _matchedLyrics = new();
+    private bool _inputMatched;
 
     private bool IsMatch(string word)
     {
-        return inputValue.Equals(word, StringComparison.OrdinalIgnoreCase);
+        return _inputValue.Equals(word, StringComparison.OrdinalIgnoreCase);
     }
 
     private void ProcessInput(ChangeEventArgs e)
     {
-        inputValue = e.Value.ToString();
-        inputMatched = CheckMatch();
+        _inputValue = e.Value.ToString();
+        _inputMatched = CheckMatch();
 
-        if (inputMatched)
+        if (_inputMatched)
         {
-            inputValue = "";
+            Task.Yield();
+            _inputValue = "";
         }
     }
 
     private bool CheckMatch()
     {
-        bool matched = false;
+        var matched = false;
 
-        List<string> unmatchedLyrics = lyrics.Except(matchedLyrics).ToList();
+        var unmatchedLyrics = _lyrics.Where(l => !_matchedLyrics.Contains(l)).ToList();
 
-        foreach (string word in unmatchedLyrics)
+        foreach (var word in unmatchedLyrics)
         {
             if (IsMatch(word))
             {
-                matchedLyrics.Add(word);
-                amountOfMatched++;
+                _matchedLyrics.Add(word);
+                _amountOfMatched++;
                 matched = true;
             }
         }
@@ -110,24 +113,33 @@
 
     private string GetDivClass(string word)
     {
-        if (matchedLyrics.Contains(word))
-        {
-            return "matched";
-        }
-
-        return "unmatched";
+        return _matchedLyrics.Contains(word) ? "matched" : "unmatched";
     }
 
     private void ShowAllLyrics()
     {
-        matchedLyrics = new HashSet<string>(lyrics);
-        amountOfMatched = matchedLyrics.Count;
+        _matchedLyrics = new HashSet<string>(_lyrics);
+        _amountOfMatched = _lyrics.Length;
     }
 
     private void ClearMatchedLyrics()
     {
-        matchedLyrics.Clear();
-        amountOfMatched = 0;
-        inputValue = ""; //
+        _matchedLyrics.Clear();
+        _amountOfMatched = 0;
+        _inputValue = "";
     }
+
+    private async Task GetLyrics()
+    {
+        var spotifyClient = new SpotifyClient();
+        _lyrics = await spotifyClient.GetLyricsFromARandomTrackInPlaylist(_playlist);
+        _matchedLyrics = new HashSet<string>();
+        _amountOfMatched = 0;
+    }
+
+    private void SaveInVariable(ChangeEventArgs e)
+    {
+        _playlist = e.Value!.ToString()!;
+    }
+
 }

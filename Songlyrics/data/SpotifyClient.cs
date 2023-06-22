@@ -28,7 +28,10 @@ namespace Songlyrics.Data
             var lyricsString = lyricsObject.Select(l => l.Words);
             var cleanedLyrics = string.Join(" ", lyricsString.Select(s => Regex.Replace(s, @"[^0-9a-zA-Z\s]", "")));
             var wordsList = cleanedLyrics.Split(' ').ToList().Where(s => !string.IsNullOrWhiteSpace(s));
-            return wordsList.ToArray();
+            var wordsListWithArtistAndTrack = wordsList.ToList();
+            wordsListWithArtistAndTrack.Add(track.Artists[0].Name);
+            wordsListWithArtistAndTrack.Add(track.Name);
+            return wordsListWithArtistAndTrack.ToArray();
         }
 
         private string GetSpotifyAccessToken(string clientId, string clientSecret)
