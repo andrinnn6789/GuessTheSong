@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\Songlyrics.csproj": {}
+    "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\Songlyrics.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\Songlyrics.csproj": {
+    "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\Songlyrics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\Songlyrics.csproj",
+        "projectUniqueName": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\Songlyrics.csproj",
         "projectName": "Songlyrics",
-        "projectPath": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\Songlyrics.csproj",
-        "packagesPath": "C:\\Users\\nicolasvonrotz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\obj\\",
+        "projectPath": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\Songlyrics.csproj",
+        "packagesPath": "C:\\Users\\aport\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\nicolasvonrotz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aport\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

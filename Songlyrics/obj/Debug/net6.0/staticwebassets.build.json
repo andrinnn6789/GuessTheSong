@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rpkkyOYhRGspkrTBrFlo/Ce/vlhm0lxzxrZa4QrRjYQ=",
+  "Hash": "QFo73gUopm/FjpIIEhQQJ7LlgcU+QdQgH5KX8IVFC6Y=",
   "Source": "Songlyrics",
   "BasePath": "_content/Songlyrics",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Songlyrics\\wwwroot",
       "Source": "Songlyrics",
-      "ContentRoot": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\wwwroot\\",
       "BasePath": "_content/Songlyrics",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Songlyrics.styles.css",
+      "Identity": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Songlyrics.styles.css",
       "SourceId": "Songlyrics",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Songlyrics",
       "RelativePath": "Songlyrics.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Songlyrics.styles.css"
+      "OriginalItemSpec": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Songlyrics.styles.css"
     },
     {
-      "Identity": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Songlyrics.bundle.scp.css",
+      "Identity": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Songlyrics.bundle.scp.css",
       "SourceId": "Songlyrics",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Songlyrics",
       "RelativePath": "Songlyrics.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Songlyrics.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Songlyrics.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "Songlyrics",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\wwwroot\\",
       "BasePath": "_content/Songlyrics",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "Songlyrics",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\wwwroot\\",
       "BasePath": "_content/Songlyrics",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "Songlyrics",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\wwwroot\\",
       "BasePath": "_content/Songlyrics",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "Songlyrics",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\wwwroot\\",
       "BasePath": "_content/Songlyrics",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "Songlyrics",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\wwwroot\\",
       "BasePath": "_content/Songlyrics",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "Songlyrics",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\wwwroot\\",
       "BasePath": "_content/Songlyrics",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "Songlyrics",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\wwwroot\\",
       "BasePath": "_content/Songlyrics",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "Songlyrics",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\wwwroot\\",
       "BasePath": "_content/Songlyrics",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "Songlyrics",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\wwwroot\\",
       "BasePath": "_content/Songlyrics",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "Songlyrics",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\wwwroot\\",
       "BasePath": "_content/Songlyrics",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "Songlyrics",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\wwwroot\\",
       "BasePath": "_content/Songlyrics",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\wwwroot\\css\\site.css",
       "SourceId": "Songlyrics",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\wwwroot\\",
       "BasePath": "_content/Songlyrics",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\wwwroot\\favicon.ico",
       "SourceId": "Songlyrics",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nicolasvonrotz\\source\\repos\\GuessTheSong\\Songlyrics\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\wwwroot\\",
       "BasePath": "_content/Songlyrics",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
