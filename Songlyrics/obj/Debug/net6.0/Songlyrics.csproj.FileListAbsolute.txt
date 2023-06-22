@@ -94,3 +94,6 @@ C:\Users\aport\OneDrive\Dokumente\GuessTheSong\Songlyrics\obj\Debug\net6.0\refin
 C:\Users\aport\OneDrive\Dokumente\GuessTheSong\Songlyrics\obj\Debug\net6.0\Songlyrics.pdb
 C:\Users\aport\OneDrive\Dokumente\GuessTheSong\Songlyrics\obj\Debug\net6.0\Songlyrics.genruntimeconfig.cache
 C:\Users\aport\OneDrive\Dokumente\GuessTheSong\Songlyrics\obj\Debug\net6.0\ref\Songlyrics.dll
+C:\Users\aport\OneDrive\Dokumente\GuessTheSong\Songlyrics\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\aport\OneDrive\Dokumente\GuessTheSong\Songlyrics\bin\Debug\net6.0\SpotifyAPI.Web.dll
+C:\Users\aport\OneDrive\Dokumente\GuessTheSong\Songlyrics\obj\Debug\net6.0\Songlyrics.csproj.CopyComplete

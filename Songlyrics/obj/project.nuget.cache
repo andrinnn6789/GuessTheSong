@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "O21QYACiR6IpF5HpxYQnYBCGh9LB8COeoRdbx+1E4ZzL0p3dYjEuNrJV3NqKFZ9whn3pKOwpu7cMBair5QCSGA==",
+  "dgSpecHash": "fgi8YsNNCvCgUNsvWRAYIbFmVmEY8cGGaewLp28er2Jmdq5d1Jq2yKsG0HkBISjhPSwf3Gfs+Ji1Jxj0cjKhhw==",
   "success": true,
   "projectFilePath": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\Songlyrics.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\aport\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\aport\\.nuget\\packages\\spotifyapi.web\\7.0.0\\spotifyapi.web.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,8 +1,10 @@
 ﻿@page "/"
+@using Songlyrics.Data
 
 <PageTitle>Guess The Song</PageTitle>
 
-<Button>Get Lyrics</Button>
+<Button @onclick="GetLyrics">Get Lyrics</Button>
+
 
 <input type="text" value="@inputValue" onEnter="ProcessInput" />
 
@@ -13,4 +15,11 @@
     {
         
     }
+
+    private void GetLyrics()
+    {
+        var client = new SpotifyClient();
+        var x = client.GetLyricsFromARandomTrackInPlaylist("0e9L3EiHZ8dfMWah3pg6uG");
+    }
 }
+ 
