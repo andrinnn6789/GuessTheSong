@@ -6,20 +6,128 @@
 <Button @onclick="GetLyrics">Get Lyrics</Button>
 
 
-<input type="text" value="@inputValue" onEnter="ProcessInput" />
+<input type="text" value="@inputValue" @oninput="ProcessInput" />
+
+<div class="counter">
+    <span>@amountOfMatched</span>/<span>@lyrics.Length</span>
+</div>
+
+<div class="lyrics-grid">
+    @foreach (string word in lyrics)
+    {
+        <div class="lyrics-box">
+            <div id="@word" class="@GetDivClass(word)">@word</div>
+        </div>
+    }
+</div>
+
+<div class="button-group">
+    <button class="show-all-button" @onclick="ShowAllLyrics">Show All</button>
+    <button class="clear-all-button" @onclick="ClearMatchedLyrics">Clear All</button>
+</div>
+
+<style>
+    .lyrics-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 10px;
+    }
+
+    .lyrics-box {
+        border: 1px solid #000;
+        padding: 10px;
+    }
+
+    .matched {
+        color: black;
+    }
+
+    .unmatched {
+        color: white;
+    }
+
+    .counter {
+        margin-top: 10px;
+        text-align: right;
+    }
+
+    .button-group {
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    .show-all-button,
+    .clear-all-button {
+        margin-right: 10px;
+    }
+</style>
 
 @code {
-    private string inputValue;
-
-    private void ProcessInput()
+    private string inputValue = "";
+    private int amountOfMatched = 0;
+    private string[] lyrics = new string[]
     {
-        
+        "I", "am", "cool", "De", "Jänne", "esch", "en", "fette", "hs", "genau", "so", "fett","a", "i"
+    };
+    private HashSet<string> matchedLyrics = new HashSet<string>();
+    private bool inputMatched = false;
+
+    private bool IsMatch(string word)
+    {
+        return inputValue.Equals(word, StringComparison.OrdinalIgnoreCase);
     }
 
-    private void GetLyrics()
+    private void ProcessInput(ChangeEventArgs e)
     {
-        var client = new SpotifyClient();
-        var x = client.GetLyricsFromARandomTrackInPlaylist("0e9L3EiHZ8dfMWah3pg6uG");
+        inputValue = e.Value.ToString();
+        inputMatched = CheckMatch();
+
+        if (inputMatched)
+        {
+            inputValue = "";
+        }
+    }
+
+    private bool CheckMatch()
+    {
+        bool matched = false;
+
+        List<string> unmatchedLyrics = lyrics.Except(matchedLyrics).ToList();
+
+        foreach (string word in unmatchedLyrics)
+        {
+            if (IsMatch(word))
+            {
+                matchedLyrics.Add(word);
+                amountOfMatched++;
+                matched = true;
+            }
+        }
+
+        return matched;
+    }
+
+
+    private string GetDivClass(string word)
+    {
+        if (matchedLyrics.Contains(word))
+        {
+            return "matched";
+        }
+
+        return "unmatched";
+    }
+
+    private void ShowAllLyrics()
+    {
+        matchedLyrics = new HashSet<string>(lyrics);
+        amountOfMatched = matchedLyrics.Count;
+    }
+
+    private void ClearMatchedLyrics()
+    {
+        matchedLyrics.Clear();
+        amountOfMatched = 0;
+        inputValue = ""; //
     }
 }
- 
