@@ -79,26 +79,25 @@
     {
         inputValue = e.Value.ToString();
         inputMatched = CheckMatch();
+
+        if (inputMatched)
+        {
+            inputValue = "";
+        }
     }
 
     private bool CheckMatch()
     {
         bool matched = false;
 
-        foreach (string word in lyrics)
+        List<string> unmatchedLyrics = lyrics.Except(matchedLyrics).ToList();
+
+        foreach (string word in unmatchedLyrics)
         {
             if (IsMatch(word))
             {
-                if (!matchedLyrics.Contains(word))
-                {
-                    // Check if there are no matched lyrics that are a substring of the current word
-                    if (!matchedLyrics.Any(matchedWord => word.Contains(matchedWord + " ")))
-                    {
-                        matchedLyrics.Add(word);
-                        amountOfMatched++;
-                    }
-                }
-
+                matchedLyrics.Add(word);
+                amountOfMatched++;
                 matched = true;
             }
         }
