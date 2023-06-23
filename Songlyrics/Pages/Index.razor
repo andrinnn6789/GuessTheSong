@@ -1,16 +1,17 @@
 ﻿@page "/"
 @using Songlyrics.Data
+@using System.Timers
 
 <PageTitle>Guess The Song</PageTitle>
 
 <Button @onclick="GetLyrics">Get Lyrics from a Random Track in Playlist</Button>
 
-<input type="text" placeholder="playlistId" value="@_playlist" @oninput="SaveInVariable" />
+<input type="text" placeholder="playlistId" @bind-value="_playlist" @bind-value:event="oninput" @onkeyup="@OnValueChange2" />
 
 <br/>
 <br/>
 
-<input type="text" placeholder="lyric input" value="@_inputValue" @oninput="ProcessInput" />
+<input type="text" placeholder="lyrics input" @bind-value="_inputValue" @bind-value:event="oninput" @onkeyup="@OnValueChange" />
 
 <div class="counter">
     <span>@_amountOfMatched</span>/<span>@_lyrics.Length</span>
@@ -79,9 +80,8 @@
         return _inputValue.Equals(word, StringComparison.OrdinalIgnoreCase);
     }
 
-    private void ProcessInput(ChangeEventArgs e)
+    private void ProcessInput()
     {
-        _inputValue = e.Value.ToString();
         _inputMatched = CheckMatch();
 
         if (_inputMatched)
@@ -142,4 +142,50 @@
         _playlist = e.Value!.ToString()!;
     }
 
+    private Timer timerObj;
+    private Timer timerObj2;
+
+    protected override void OnInitialized()
+    {
+        timerObj = new Timer(150);
+        timerObj.Elapsed += OnUserFinish;
+        timerObj.AutoReset = false;
+        timerObj2 = new Timer(150);
+        timerObj2.Elapsed += OnUserFinish;
+        timerObj2.AutoReset = false;
+    }
+
+    private void OnValueChange(KeyboardEventArgs e)
+    {
+    // remove previous one
+        timerObj.Stop();
+    // new timer
+        timerObj.Start();
+    }
+
+    private void OnUserFinish(Object source, ElapsedEventArgs e)
+    {
+        InvokeAsync(() =>
+        {
+            ProcessInput();
+            StateHasChanged();
+        });
+    }
+
+    private void OnValueChange2(KeyboardEventArgs e)
+    {
+    // remove previous one
+        timerObj2.Stop();
+    // new timer
+        timerObj2.Start();
+    }
+
+    private void OnUserFinish2(Object source, ElapsedEventArgs e)
+    {
+        InvokeAsync(() =>
+        {
+            ProcessInput();
+            StateHasChanged();
+        });
+    }
 }

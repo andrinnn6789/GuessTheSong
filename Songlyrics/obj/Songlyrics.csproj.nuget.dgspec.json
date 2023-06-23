@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\Songlyrics.csproj": {}
+    "C:\\Users\\ap\\Documents\\GuessTheSong\\Songlyrics\\Songlyrics.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\Songlyrics.csproj": {
+    "C:\\Users\\ap\\Documents\\GuessTheSong\\Songlyrics\\Songlyrics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\Songlyrics.csproj",
+        "projectUniqueName": "C:\\Users\\ap\\Documents\\GuessTheSong\\Songlyrics\\Songlyrics.csproj",
         "projectName": "Songlyrics",
-        "projectPath": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\Songlyrics.csproj",
-        "packagesPath": "C:\\Users\\aport\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aport\\OneDrive\\Dokumente\\GuessTheSong\\Songlyrics\\obj\\",
+        "projectPath": "C:\\Users\\ap\\Documents\\GuessTheSong\\Songlyrics\\Songlyrics.csproj",
+        "packagesPath": "C:\\Users\\ap\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ap\\Documents\\GuessTheSong\\Songlyrics\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\aport\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ap\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -25,9 +25,9 @@
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gitlab.i-ag.ch/api/v4/projects/20/packages/nuget/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -69,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
